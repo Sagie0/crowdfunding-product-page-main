@@ -1,0 +1,354 @@
+@import url('https://fonts.googleapis.com/css2?family=Commissioner:wght@400;500;700&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Commissioner', sans-serif;
+}
+
+body {
+    background-color: rgb(243, 241, 241);
+}
+
+.hero {
+    background-image: url(./images/image-hero-desktop.jpg);
+    height: 300px;
+    object-fit: cover;
+}
+
+.header {
+    height: 150px;
+    /* background-color: bisque; */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0px 5%;
+}
+
+
+.header .links {
+    display: flex;
+    justify-content: space-around;
+    gap: 35px;
+    /* background-color: aqua; */
+}
+
+.header .links a {
+    font-size: 15px;
+    text-decoration: none;
+    color: #fff;
+    font-family: 700;
+    opacity: 85%;
+}
+
+.container {
+    /* display: grid;
+    grid-template-rows: 300px 200px 700px; */
+    display: flex;
+    flex-direction: column;
+    margin: 3px 25%;
+    gap: 20px;
+    position: relative;
+    bottom: 100px;
+}
+
+.cta-card {
+    height: 250px;
+    background-color: #fff;
+    width: 800px;
+    border-radius: 7px;
+    display: flex;
+    flex-direction: column;
+    /* justify-content: space-around; */
+    align-items: center;
+    gap: 20px;
+}
+
+.cta-card img, h2, p, .buttons {
+    position: relative;
+    bottom: 25px;
+}
+
+.cta-card img {
+    cursor: pointer;
+}
+
+.cta-card h2 {
+    font-weight: 700;
+    font-size: 30px;
+}
+
+.cta-card p {
+    font-weight: 500;
+    color: hsl(0, 0%, 48%);
+
+}
+
+
+.cta-card .buttons {
+    /* background-color: aqua; */
+    padding: 30px;
+    display: flex;
+    gap: 280px;
+
+}
+
+.buttons #two {
+    /* padding: 35px 45px; */
+    width: 170px;
+    height: 50px;
+    border-radius: 60px;
+    color: hsl(0, 0%, 48%);
+    background-color: rgb(243, 241, 241);
+    border: none;
+    font-size: 16px;
+    font-weight: 700;
+    cursor: pointer;
+
+}
+
+.buttons a #one {
+    width: 220px;
+    height: 50px;
+    border-radius: 60px;
+    background-color: hsl(176, 50%, 47%);
+    color: #fff;
+    border: none;
+    font-size: 16px;
+    font-weight: 500;
+    cursor: pointer;
+}
+
+.stats-card {
+    height: 230px;
+    background-color: #fff;
+    width: 800px;
+    border-radius: 7px;
+    display: flex;
+    flex-direction: column;
+    /* gap: 150px; */
+    align-items: center;
+    justify-content: space-between;
+    gap: 50px;
+     /* background-color: antiquewhite; */
+}
+
+.stats-card .stats {
+    display: flex;
+    justify-content: space-around;
+    gap: 30px;
+    align-items:  ;
+    position: relative;
+    top: 40px;
+    /* background-color: aqua; */
+    height: 70px;
+    
+}
+
+.stats-card .stats p {
+    color: hsl(0, 0%, 48%);
+}
+
+.stats-card .stats .funding-stats  {
+    border-right: 2px solid hsl(0, 0%, 80%);
+    padding: 30px;
+}
+
+.stats-card .stats .traffic-stats {
+    border-right: 2px solid hsl(0, 0%, 80%);
+    padding: 30px;
+}
+
+.stats-card .stats .duration-stats {
+    /* border-right: 2px solid black; */
+    padding: 30px;
+}
+
+.stats-card meter {
+    width: 700px;
+    height:30px;
+    border: none;
+    position: relative;
+    top: 30px;
+}
+
+meter::-webkit-meter-bar {
+    background: none;
+    background-color: rgb(232, 231, 231);
+}
+
+meter::-webkit-meter-optimum-value {
+    background-color: hsl(176, 50%, 47%);
+    border-radius: 50px;
+}
+
+
+.pledges-card {
+    height: 1200px;
+    background-color: #fff;
+    width: 800px;
+    border-radius: 7px;
+    padding: 80px 50px ;
+    display: flex;
+    flex-direction: column;
+    gap: 35px;
+}
+
+.pledges-card #details {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+
+.pledges-card #details p {
+    line-height: 25px;
+    color: hsl(0, 0%, 48%);
+    font-size: 16px;
+    
+}
+
+.pledges-card #bamboo-stand {
+    height: 250px;
+    border-radius: 7px;
+    border: 1px solid hsl(0, 0%, 80%);
+    display: flex;
+    flex-direction: column;
+    padding: 30px 30px;
+    gap: 40px;
+}
+
+.pledges-card #bamboo-stand .card-heading {
+    display: flex;
+    justify-content: space-between;
+}
+
+.pledges-card #bamboo-stand .card-heading a {
+    text-decoration: none;
+    color: hsl(176, 50%, 47%);
+    font-weight: 500;
+}
+
+.pledges-card #bamboo-stand .card-body {
+    line-height: 25px;
+    color: hsl(0, 0%, 48%);
+    font-size: 16px;
+}
+
+.pledges-card #bamboo-stand .card-footing {
+    display: flex;
+    justify-content: space-between;
+}
+
+.pledges-card #bamboo-stand .card-footing button {
+    padding: 10px 25px;
+    border-radius: 50px;
+    background-color: hsl(176, 50%, 47%);
+    border: none;
+    color: #fff;
+}
+
+.pledges-card #bamboo-stand .card-footing span {
+    font-size: 16px;
+    color: hsl(0, 0%, 48%);
+    position: relative;
+    bottom: 5px;
+}
+
+.pledges-card #black-edition-stand {
+    height: 250px;
+    border-radius: 7px;
+    border: 1px solid hsl(0, 0%, 80%);
+    display: flex;
+    flex-direction: column;
+    padding: 30px 30px;
+    gap: 40px;
+}
+
+.pledges-card #black-edition-stand .card-heading {
+    display: flex;
+    justify-content: space-between;
+}
+
+.pledges-card #black-edition-stand .card-heading a {
+    text-decoration: none;
+    color: hsl(176, 50%, 47%);
+    font-weight: 500;
+}
+
+.pledges-card #black-edition-stand .card-body {
+    line-height: 25px;
+    color: hsl(0, 0%, 48%);
+    font-size: 16px;
+}
+
+.pledges-card #black-edition-stand .card-footing {
+    display: flex;
+    justify-content: space-between;
+}
+
+.pledges-card #black-edition-stand .card-footing button {
+    padding: 10px 25px;
+    border-radius: 50px;
+    background-color: hsl(176, 50%, 47%);
+    border: none;
+    color: #fff;
+}
+
+.pledges-card #black-edition-stand .card-footing span {
+    font-size: 16px;
+    color: hsl(0, 0%, 48%);
+    position: relative;
+    bottom: 5px;
+}
+
+.pledges-card #mahogany-special-edition {
+    height: 250px;
+    border-radius: 7px;
+    border: 1px solid hsl(0, 0%, 80%);
+    display: flex;
+    flex-direction: column;
+    padding: 30px 30px;
+    gap: 40px;
+    opacity: 40%;
+}
+
+.pledges-card #mahogany-special-edition .card-heading {
+    display: flex;
+    justify-content: space-between;
+}
+
+.pledges-card #mahogany-special-edition .card-heading a {
+    text-decoration: none;
+    color: hsl(176, 50%, 47%);
+    font-weight: 500;
+}
+
+.pledges-card #mahogany-special-edition .card-body {
+    line-height: 25px;
+    color: hsl(0, 0%, 48%);
+    font-size: 16px;
+}
+
+.pledges-card #mahogany-special-edition .card-footing {
+    display: flex;
+    justify-content: space-between;
+}
+
+.pledges-card #mahogany-special-edition .card-footing button {
+    padding: 10px 25px;
+    border-radius: 50px;
+    background-color: hsl(0, 0%, 48%);
+    border: none;
+    color: #fff;
+}
+
+.pledges-card #mahogany-special-edition .card-footing span {
+    font-size: 16px;
+    color: hsl(0, 0%, 48%);
+    position: relative;
+    bottom: 5px;
+}
+
+
+
