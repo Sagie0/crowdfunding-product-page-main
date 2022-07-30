@@ -355,7 +355,7 @@ meter::-webkit-meter-optimum-value {
 /* modal starts here */
 
 .modal-card-container {
-    height: 900px;
+    min-height: 900px;
     background-color: #fff;
     width: 800px;
     border-radius: 7px;
@@ -366,7 +366,7 @@ meter::-webkit-meter-optimum-value {
     z-index: 2;
     position: absolute;
     top: 150px;
-    box-shadow: 1000px 1000px 2000px 2000px rgba(86, 83, 83, 0.363);
+    box-shadow: 1000px 1000px 2000px 2000px #5653535d;
 }
 
 .modal-card-container .briefing {
@@ -440,4 +440,42 @@ meter::-webkit-meter-optimum-value {
 
 #modal-card:nth-child(5) {
     opacity: 50%;
+}
+
+
+.thanks-card {
+    display: flex;
+    flex-direction: column;
+    width: 400px;
+    height: 350px;
+    background-color: #fff;
+    padding: 20px;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+    border-radius: 7px;
+    align-self: center;
+    position: absolute;
+    top: 150px;
+    box-shadow: 1000px 1000px 2000px 2000px #5653535d;
+}
+
+.thanks-card img {
+    height: 60px;
+    width: 60px;
+    margin-bottom: 0px;
+}
+
+.thanks-card p {
+    line-height: 25px;
+    font-size: 16px;
+    color: hsl(0, 0%, 48%);
+}
+
+.thanks-card button {
+    padding: 10px 25px;
+    border-radius: 50px;
+    border: none;
+    color: #fff;
+    background-color: hsl(176, 50%, 47%);
 }
